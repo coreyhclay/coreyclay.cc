@@ -1,0 +1,97 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 0;
+    font-family: kobenhavn,serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.daylink {
+    color: black;
+    border-bottom: 2px solid rgba(150, 150, 150, 0.2);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.daylink:hover {
+    color: rgba(150, 150, 150, 0.2);
+}
+
+.nightlink {
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.nightlink:hover {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#daytext {
+    color: black;
+    border-left: 2px solid rgba(150, 150, 150, 0.2);
+}
+
+#nighttext {
+    color: white;
+    display: none;
+}
+
+#wrap {
+    font-size: 1.8em;
+    line-height: 1.8em;
+    padding: 7% 20% 7% 20%;
+}
+
+#daybutton {
+    background: transparent;
+    border: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+    outline: none;
+}
+
+#nightbutton {
+    background: transparent;
+    border: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+    outline: none;
+}
+
+p {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+::selection {
+    background: rgba(150, 150, 150, 0.2); /* WebKit/Blink Browsers */
+  }
+
+#fuzz {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("fuzz.gif");
+    opacity: 5%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    #wrap {
+        padding: 7% 20% 7% 5%;
+    }
+}
+
+#transluscent {
+    /* color: rgba(150, 150, 150, 0.2); */
+}
